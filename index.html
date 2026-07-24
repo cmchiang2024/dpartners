@@ -725,7 +725,7 @@ footer{background:#0F172A;color:#fff;padding:60px 0 30px;}
           <i class="fa-solid fa-envelope"></i>
           <div>
             <div class="lbl">Email</div>
-            <div class="val"><a href="/cdn-cgi/l/email-protection#93fafdf5fcd3f7e3f2e1e7fdf6e1e0bdfcfdfffafdf6"><span class="__cf_email__" data-cfemail="4a23242c250a2e3a2b383e242f38396425242623242f">[email&#160;protected]</span></a></div>
+            <div class="val"><a href="/cdn-cgi/l/email-protection#94fdfaf2fbd4f0e4f5e6e0faf1e6e7bafbfaf8fdfaf1"><span class="__cf_email__" data-cfemail="533a3d353c1337233221273d3621207d3c3d3f3a3d36">[email&#160;protected]</span></a></div>
           </div>
         </div>
         <div class="c-item">
@@ -737,38 +737,47 @@ footer{background:#0F172A;color:#fff;padding:60px 0 30px;}
         </div>
         <div class="socials">
           <a href="https://wa.me/85256381628" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="/cdn-cgi/l/email-protection#f49d9a929bb490849586809a918687da9b9a989d9a91" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="/cdn-cgi/l/email-protection#ef86818980af8b9f8e9d9b818a9d9cc180818386818a" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
-      <form class="contact-form" onsubmit="event.preventDefault();this.querySelector('button').innerHTML='<i class=\'fa-solid fa-check\'></i> Thank you!';">
+      <form class="contact-form" id="contactForm"
+            action="https://formsubmit.co/fcmahk@gmail.com"
+            method="POST">
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="New enquiry from dpartners.online"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_next" value="https://www.dpartners.online/?sent=1"/>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
         <h3><span class="zh">遞交表格</span><span class="en">Send us a message</span></h3>
         <p><span class="zh">我們將於一個工作日內回覆您。</span><span class="en">We'll get back to you within one business day.</span></p>
         <div class="form-row">
           <div class="form-group">
             <label><span class="zh">姓名</span><span class="en">Name</span></label>
-            <input type="text" required placeholder="Your name"/>
+            <input type="text" name="Name" required placeholder="Your name"/>
           </div>
           <div class="form-group">
             <label><span class="zh">公司</span><span class="en">Company</span></label>
-            <input type="text" placeholder="Company"/>
+            <input type="text" name="Company" placeholder="Company"/>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Email</label>
-            <input type="email" required placeholder="you@company.com"/>
+            <input type="email" name="Email" required placeholder="you@company.com"/>
           </div>
           <div class="form-group">
             <label><span class="zh">電話</span><span class="en">Phone</span></label>
-            <input type="tel" placeholder="+852"/>
+            <input type="tel" name="Phone" placeholder="+852"/>
           </div>
         </div>
         <div class="form-group">
           <label><span class="zh">感興趣的服務</span><span class="en">Service interest</span></label>
-          <select>
-            <option><span>—</span></option>
+          <select name="Service">
+            <option value="">—</option>
             <option>Photo Digitisation / 相片數碼化</option>
             <option>Apps Development / Apps 應用程式開發</option>
             <option>Website Development / 網站開發</option>
@@ -778,9 +787,10 @@ footer{background:#0F172A;color:#fff;padding:60px 0 30px;}
         </div>
         <div class="form-group">
           <label><span class="zh">訊息</span><span class="en">Message</span></label>
-          <textarea placeholder="Tell us about your project…"></textarea>
+          <textarea name="Message" placeholder="Tell us about your project…"></textarea>
         </div>
-        <button type="submit">
+        <div id="formStatus" style="display:none;margin-bottom:14px;padding:12px 14px;border-radius:12px;font-weight:600;font-size:14px;"></div>
+        <button type="submit" id="submitBtn">
           <i class="fa-solid fa-paper-plane"></i>
           <span class="zh"> 遞交表格</span><span class="en"> Submit</span>
         </button>
@@ -827,7 +837,7 @@ footer{background:#0F172A;color:#fff;padding:60px 0 30px;}
         <ul>
           <li><a href="tel:+85256381628"><i class="fa-solid fa-phone"></i>+852 5638 1628</a></li>
           <li><a href="https://wa.me/85256381628" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>+852 5638 1628</a></li>
-          <li><a href="/cdn-cgi/l/email-protection#5b32353d341b3f2b3a292f353e29287534353732353e"><i class="fa-solid fa-envelope"></i><span class="__cf_email__" data-cfemail="01686f676e4165716073756f6473722f6e6f6d686f64">[email&#160;protected]</span></a></li>
+          <li><a href="/cdn-cgi/l/email-protection#177e797178577367766563797265643978797b7e7972"><i class="fa-solid fa-envelope"></i><span class="__cf_email__" data-cfemail="9cf5f2faf3dcf8ecfdeee8f2f9eeefb2f3f2f0f5f2f9">[email&#160;protected]</span></a></li>
           <li><i class="fa-solid fa-location-dot"></i><span class="zh">香港</span><span class="en">Hong Kong</span></li>
         </ul>
       </div>
@@ -871,6 +881,49 @@ window.addEventListener('scroll',()=>{
 
 // Current year
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Contact form — AJAX submit to FormSubmit.co → forwards to fcmahk@gmail.com
+const form = document.getElementById('contactForm');
+const statusEl = document.getElementById('formStatus');
+const submitBtn = document.getElementById('submitBtn');
+const isZh = () => document.body.classList.contains('lang-zh');
+form?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const original = submitBtn.innerHTML;
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ' + (isZh() ? ' 傳送中…' : ' Sending…');
+  statusEl.style.display = 'none';
+  try {
+    const data = new FormData(form);
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      statusEl.style.background = '#ECFDF5';
+      statusEl.style.color = '#065F46';
+      statusEl.style.border = '1px solid #A7F3D0';
+      statusEl.innerHTML = '<i class="fa-solid fa-circle-check"></i> ' +
+        (isZh() ? ' 已收到！我們將盡快與您聯繫。' : ' Thanks! We\'ll get back to you shortly.');
+      statusEl.style.display = 'block';
+      form.reset();
+      submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> ' + (isZh() ? ' 已送出' : ' Sent');
+    } else {
+      throw new Error('Bad response');
+    }
+  } catch (err) {
+    statusEl.style.background = '#FEF2F2';
+    statusEl.style.color = '#991B1B';
+    statusEl.style.border = '1px solid #FECACA';
+    statusEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> ' +
+      (isZh() ? ' 送出失敗，請直接電郵至 info@dpartners.online 或 WhatsApp +852 5638 1628。' :
+                ' Could not send. Please email info@dpartners.online or WhatsApp +852 5638 1628.');
+    statusEl.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = original;
+  }
+});
 </script>
 </body>
 </html>
